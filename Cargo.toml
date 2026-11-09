@@ -1,0 +1,21 @@
+[workspace]
+members = ["globwebsocket", "globwebsocket-derive"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/ArvenKael/globwebsocket"
+
+[workspace.dependencies]
+async-trait = "0.1"
+axum = { version = "0.8", features = ["ws"] }
+base64 = "0.22"
+futures-util = "0.3"
+loco-rs = "1.2"
+serde = { version = "1", features = ["derive"] }
+serde-reflection = "0.6"
+serde_json = "1"
+tokio = { version = "1.45", features = ["rt", "sync", "time", "macros"] }
+tracing = "0.1"

@@ -1,0 +1,23 @@
+[package]
+name = "globwebsocket"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Typed, application-agnostic WebSocket operations over a single Loco endpoint"
+
+[dependencies]
+async-trait.workspace = true
+axum.workspace = true
+base64.workspace = true
+futures-util.workspace = true
+globwebsocket-derive = { version = "0.1.0", path = "../globwebsocket-derive" }
+loco-rs.workspace = true
+serde.workspace = true
+serde-reflection.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tokio = { version = "1.45", features = ["rt", "macros"] }

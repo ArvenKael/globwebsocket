@@ -1,0 +1,14 @@
+[package]
+name = "globwebsocket-derive"
+version = "0.1.0"
+edition = "2021"
+description = "Derive macro for globwebsocket typed WebSocket operations"
+license = "MIT"
+repository = "https://github.com/ArvenKael/globwebsocket"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["derive"] }
+quote = "1"
